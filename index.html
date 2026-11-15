@@ -1,437 +1,800 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECOMEDIA RADEC - Bumi Kita & Perubahan Iklim</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECOMEDIA RADEC — Bumi Kita &amp; Perubahan Iklim</title>
+  
+  <!-- Favicon / Meta -->
+  <meta name="description" content="Media Pembelajaran Interaktif Siswa Kelas V SD Berbasis Model RADEC dan Ecoliteracy">
+  
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 1. HALAMAN AWAL (HOMEPAGE) -->
-    <section id="page-home" class="page active">
-        <div class="container split-layout">
-            <div class="col-left">
-                <div class="badge badge-light">🌱 ECOMEDIA RADEC</div>
-                <h1 class="hero-title">
-                    <span class="text-dark-green">Bumi Kita &</span><br>
-                    <span class="text-blue">Perubahan Iklim</span>
-                </h1>
-                <p class="hero-desc">Yuk belajar bagaimana perubahan iklim memengaruhi kehidupan kita dan apa yang dapat kita lakukan untuk menjaga Bumi melalui petualangan belajar RADEC.</p>
-                
-                <div class="badge-group">
-                    <span class="badge badge-pill">👧 Siswa Kelas V SD</span>
-                    <span class="badge badge-pill">🧩 Model RADEC</span>
-                    <span class="badge badge-pill">🌍 Ecoliteracy</span>
-                </div>
-
-                <div class="hero-image">
-                    <div class="globe-icon">🌍</div>
-                </div>
-            </div>
-
-            <div class="col-right">
-                <div class="card form-card">
-                    <div class="wave-icon">👋</div>
-                    <h2>Halo, Sahabat Bumi!</h2>
-                    <p>Sebelum memulai petualangan belajar, tuliskan namamu terlebih dahulu.</p>
-                    
-                    <form id="start-form">
-                        <div class="input-group">
-                            <label for="nama">Nama Siswa <span class="text-red">*</span></label>
-                            <input type="text" id="nama" placeholder="fona" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="kelas">Kelas</label>
-                            <input type="text" id="kelas" placeholder="Contoh: V-A">
-                        </div>
-                        <div class="input-group">
-                            <label for="sekolah">Sekolah</label>
-                            <input type="text" id="sekolah" placeholder="Contoh: SD Negeri ...">
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">🚀 MULAI BELAJAR</button>
-                    </form>
-                    
-                    <div class="step-nav-text">
-                        READ &rarr; ANSWER &rarr; DISCUSS &rarr; EXPLAIN &rarr; CREATE
-                    </div>
-                </div>
-            </div>
+  <!-- ======================================================== -->
+  <!-- 1. HALAMAN AWAL (HOMEPAGE)                               -->
+  <!-- ======================================================== -->
+  <section id="page-home" class="page active" aria-label="Halaman Awal">
+    <div class="home-container">
+      
+      <!-- Kolom Kiri -->
+      <div class="home-left">
+        <!-- Badge Pill Header -->
+        <div class="badge-pill-eco">
+          <span class="leaf-icon">🌱</span>
+          <span>ECOMEDIA RADEC</span>
         </div>
-    </section>
 
-    <!-- 2. HALAMAN ORIENTASI BELAJAR -->
-    <section id="page-orientation" class="page hidden bg-teal">
-        <nav class="top-nav transparent-nav container">
-            <div class="logo">🌱 ECOMEDIA RADEC</div>
-            <div class="nav-actions">
-                <button class="btn btn-outline-white" onclick="navigateTo('page-home')">&larr; Halaman Pembuka</button>
-                <button class="btn btn-white" onclick="navigateTo('page-read')">Learning Journey &rarr;</button>
+        <!-- Heading 1 -->
+        <h1 class="home-main-heading">
+          <span class="text-forest">Bumi Kita &amp;</span>
+          <span class="text-ocean">Perubahan</span>
+          <span class="text-ocean">Iklim</span>
+        </h1>
+
+        <!-- Deskripsi Pengantar -->
+        <p class="home-description">
+          Yuk belajar bagaimana perubahan iklim memengaruhi kehidupan kita dan apa yang dapat kita lakukan untuk menjaga Bumi melalui petualangan belajar RADEC.
+        </p>
+
+        <!-- 3 Badge Pill Sejajar -->
+        <div class="home-pills-row">
+          <span class="pill-item pill-student">
+            <span class="pill-dot red-dot"></span>
+            Siswa Kelas V SD
+          </span>
+          <span class="pill-item pill-model">
+            <span class="pill-dot purple-dot"></span>
+            Model RADEC
+          </span>
+          <span class="pill-item pill-ecoliteracy">
+            <span class="pill-dot blue-dot"></span>
+            Ecoliteracy
+          </span>
+        </div>
+
+        <!-- Ilustrasi Bola Dunia & Floating Badge -->
+        <div class="globe-showcase-area">
+          <div class="floating-pill pill-read-float">
+            <span>📖</span> READ
+          </div>
+          <div class="floating-pill pill-answer-float">
+            <span>✏️</span> ANSWER
+          </div>
+
+          <!-- Realistic 3D Earth Globe Visual -->
+          <div class="earth-sphere-container" title="Bumi Kita">
+            <div class="earth-glow"></div>
+            <div class="earth-sphere">
+              <div class="earth-map"></div>
+              <div class="earth-clouds"></div>
+              <div class="earth-shadow"></div>
             </div>
+            <div class="earth-ground-shadow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan (Card Form) -->
+      <div class="home-right">
+        <div class="login-card">
+          <!-- Icon Sapaan -->
+          <div class="card-wave-badge">
+            <span>👋</span>
+          </div>
+
+          <h2 class="card-greeting-title">Halo, Sahabat Bumi!</h2>
+          <p class="card-greeting-subtitle">
+            Sebelum memulai petualangan belajar, tuliskan namamu terlebih dahulu.
+          </p>
+
+          <!-- Form Input -->
+          <form id="form-mulai" autocomplete="off" novalidate>
+            <div class="form-group">
+              <label for="input-nama">Nama Siswa <span class="required-mark">*</span></label>
+              <div class="input-wrapper">
+                <input type="text" id="input-nama" placeholder="fona" required autofocus>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="input-kelas">Kelas</label>
+              <div class="input-wrapper">
+                <input type="text" id="input-kelas" placeholder="Contoh: V-A">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="input-sekolah">Sekolah</label>
+              <div class="input-wrapper">
+                <input type="text" id="input-sekolah" placeholder="Contoh: SD Negeri ...">
+              </div>
+            </div>
+
+            <button type="submit" id="btn-mulai" class="btn-primary-gradient">
+              <span>🚀</span> MULAI BELAJAR
+            </button>
+          </form>
+
+          <!-- Step Path Indicator -->
+          <div class="radec-steps-indicator">
+            <span class="step-chip">READ</span>
+            <span class="step-arrow">→</span>
+            <span class="step-chip">ANSWER</span>
+            <span class="step-arrow">→</span>
+            <span class="step-chip">DISCUSS</span>
+            <span class="step-arrow">→</span>
+            <span class="step-chip">EXPLAIN</span>
+            <span class="step-arrow">→</span>
+            <span class="step-chip">CREATE</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- 2. HALAMAN ORIENTASI BELAJAR                             -->
+  <!-- ======================================================== -->
+  <section id="page-orientasi" class="page" aria-label="Halaman Orientasi Belajar">
+    
+    <!-- Navbar Atas Orientasi -->
+    <header class="orientasi-navbar">
+      <div class="nav-brand-white">
+        <span class="brand-icon">🌍</span>
+        <span class="brand-text">ECOMEDIA RADEC</span>
+      </div>
+      <div class="nav-actions-orientasi">
+        <button id="btn-back-home" class="btn-ghost-white" type="button">
+          &larr; Halaman Pembuka
+        </button>
+        <button id="btn-to-journey" class="btn-solid-white" type="button">
+          Learning Journey &rarr;
+        </button>
+      </div>
+    </header>
+
+    <!-- Konten Orientasi -->
+    <div class="orientasi-main-content">
+      <!-- Badge Halaman -->
+      <div class="badge-pill-translucent">
+        HALAMAN 2 &middot; ORIENTASI BELAJAR
+      </div>
+
+      <!-- Heading Sapaan -->
+      <h1 class="orientasi-welcome-title">
+        <span class="wave-icon-inline">👋</span> Halo, <span id="nama-orientasi">Sahabat</span>!
+      </h1>
+
+      <!-- Teks Pengantar -->
+      <p class="orientasi-intro-text">
+        Sebelum menjelajahi tahapan RADEC, kenali dulu cara belajar dan misi yang akan membantumu membaca hubungan manusia, lingkungan, dan perubahan iklim dengan lebih kritis.
+      </p>
+
+      <!-- Card Utama: Cara Belajar -->
+      <article class="card-white cara-belajar-card">
+        <div class="card-header-with-icon">
+          <span class="card-header-icon">🧭</span>
+          <h2 class="card-title-dark">Cara Belajar</h2>
+        </div>
+        <p class="card-desc-muted">
+          Tiga kebiasaan sederhana ini akan membantumu mengikuti petualangan dengan nyaman.
+        </p>
+
+        <!-- Grid 3 Kolom Langkah -->
+        <div class="cara-belajar-grid">
+          <!-- Langkah 1 -->
+          <div class="step-card-box">
+            <div class="step-card-top">
+              <span class="step-circle-badge">1</span>
+              <span class="step-icon-top">🗺️</span>
+            </div>
+            <h3 class="step-box-title">Ikuti Tahapan</h3>
+            <p class="step-box-desc">
+              Ikuti pembelajaran secara berurutan mulai dari READ sampai CREATE.
+            </p>
+          </div>
+
+          <!-- Langkah 2 -->
+          <div class="step-card-box">
+            <div class="step-card-top">
+              <span class="step-circle-badge">2</span>
+              <span class="step-icon-top">🔍</span>
+            </div>
+            <h3 class="step-box-title">Amati dan Pikirkan</h3>
+            <p class="step-box-desc">
+              Baca, amati gambar atau media, lalu pikirkan hubungan antara manusia dan lingkungan.
+            </p>
+          </div>
+
+          <!-- Langkah 3 -->
+          <div class="step-card-box">
+            <div class="step-card-top">
+              <span class="step-circle-badge">3</span>
+              <span class="step-icon-top">💬</span>
+            </div>
+            <h3 class="step-box-title">Sampaikan dan Bertindak</h3>
+            <p class="step-box-desc">
+              Sampaikan pendapatmu, dengarkan teman, lalu tentukan tindakan yang dapat dilakukan untuk menjaga lingkungan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Kotak Peringatan Kuning -->
+        <div class="alert-box-yellow">
+          <span class="alert-icon-bulb">💡</span>
+          <div class="alert-text">
+            <strong>Ingat!</strong> Tidak apa-apa jika jawabanmu berbeda dengan teman. Yang penting kamu dapat menjelaskan alasanmu dengan baik.
+          </div>
+        </div>
+      </article>
+
+      <!-- Card Misi Sahabat Bumi -->
+      <article class="card-forest-green misi-card">
+        <div class="misi-header">
+          <span class="misi-icon">🌱</span>
+          <h2 class="misi-title">Misi Sahabat Bumi</h2>
+        </div>
+        <p class="misi-desc">
+          Dalam petualangan ini, kamu tidak hanya belajar tentang perubahan iklim. Kamu akan belajar melihat hubungan manusia dan alam, menemukan fakta di lingkungan sekitar, serta menyusun ide aksi nyata untuk menjaga kelestarian Bumi tercinta!
+        </p>
+      </article>
+
+      <!-- Tombol Lanjut Cepat di Bawah -->
+      <div class="orientasi-footer-action">
+        <button id="btn-bottom-to-journey" class="btn-solid-white btn-large" type="button">
+          Mulai Tahap 1: READ &rarr;
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- 3. HALAMAN TAHAP 1: READ (DAFTAR MATERI)                 -->
+  <!-- ======================================================== -->
+  <section id="page-read" class="page" aria-label="Tahap 1: READ">
+
+    <!-- Top Sticky Navbar -->
+    <header class="app-top-navbar">
+      <div class="navbar-inner-container">
+        <!-- Menu Navigasi Pill -->
+        <nav class="nav-pills-list" aria-label="Navigasi Tahapan">
+          <button class="nav-pill-btn" id="kembali-ke-orientasi" type="button">
+            <span>←</span> Kembali
+          </button>
+          <button class="nav-pill-btn" data-nav="panduan" type="button">
+            <span>✅</span> Panduan &amp; Tujuan
+          </button>
+          <button class="nav-pill-btn" data-nav="peta" type="button">
+            <span>🗺️</span> Peta RADEC
+          </button>
+          <button class="nav-pill-btn active" data-nav="read" type="button">
+            <span>📖</span> Read
+          </button>
+          <button class="nav-pill-btn" data-nav="answer" type="button">
+            <span>✏️</span> Answer
+          </button>
+          <button class="nav-pill-btn" data-nav="discuss" type="button">
+            <span>💬</span> Discuss
+          </button>
+          <button class="nav-pill-btn" data-nav="explain" type="button">
+            <span>🗣️</span> Explain
+          </button>
+          <button class="nav-pill-btn" data-nav="create" type="button">
+            <span>🎨</span> Create
+          </button>
         </nav>
 
-        <div class="container mt-4">
-            <div class="badge badge-outline-white">HALAMAN 2 - ORIENTASI BELAJAR</div>
-            <h1 class="page-title text-white mt-2">👋 Halo, <span class="user-name-display">Sahabat</span>!</h1>
-            <p class="page-subtitle text-white">Sebelum menjelajahi tahapan RADEC, kenali dulu cara belajar dan misi yang akan membantumu membaca hubungan manusia, lingkungan, dan perubahan iklim dengan lebih kritis.</p>
-
-            <div class="card mt-4">
-                <h3>Cara Belajar</h3>
-                <p class="text-gray">Tiga kebiasaan sederhana ini akan membantumu mengikuti petualangan dengan nyaman.</p>
-                
-                <div class="grid-3 mt-3">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <h4>Ikuti Tahapan</h4>
-                        <p>Ikuti pembelajaran secara berurutan mulai dari READ sampai CREATE.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <h4>Amati dan Pikirkan</h4>
-                        <p>Baca, amati gambar atau media, lalu pikirkan hubungan antara manusia dan lingkungan.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <h4>Sampaikan dan Bertindak</h4>
-                        <p>Sampaikan pendapatmu, dengarkan teman, lalu tentukan tindakan yang dapat dilakukan untuk menjaga lingkungan.</p>
-                    </div>
-                </div>
-
-                <div class="alert-box alert-yellow mt-3">
-                    💡 <strong>Ingat!</strong> Tidak apa-apa jika jawabanmu berbeda dengan teman. Yang penting kamu dapat menjelaskan alasanmu dengan baik.
-                </div>
-            </div>
+        <!-- User Profile Pill -->
+        <div class="nav-user-badge" id="btn-user-profile" title="Data Siswa">
+          <span class="user-avatar-icon">👤</span>
+          <span class="user-display-name" id="nama-navbar">fona</span>
         </div>
-    </section>
+      </div>
+    </header>
 
-    <!-- HALAMAN PETA RADEC -->
-    <section id="page-peta-radec" class="page hidden bg-light-gray">
-        <!-- Navbar -->
-        <nav class="top-nav white-nav">
-            <div class="nav-pills">
-                <span class="nav-pill">Panduan & Tujuan</span>
-                <span class="nav-pill active" onclick="navigateTo('page-peta-radec')">Peta RADEC</span>
-                <span class="nav-pill" onclick="navigateTo('page-read')">Read</span>
-                <span class="nav-pill" onclick="navigateTo('page-answer')">Answer</span>
-                <span class="nav-pill" onclick="navigateTo('page-discuss')">Discuss</span>
-                <span class="nav-pill" onclick="navigateTo('page-explain')">Explain</span>
-                <span class="nav-pill" onclick="navigateTo('page-create')">Create</span>
+    <!-- Konten Utama Read -->
+    <div class="read-page-container">
+
+      <!-- Banner Biru Besar -->
+      <section class="read-blue-banner">
+        <div class="banner-pill-badge">
+          TAHAP 1 &middot; READ (MEMBACA)
+        </div>
+
+        <h1 class="banner-main-title">
+          Baca, Amati, Pahami, dan Ajukan Pertanyaanmu!
+        </h1>
+
+        <p class="banner-body-text">
+          Belajarlah bertahap: baca satu materi, berhenti sejenak untuk berpikir, lalu gunakan video dan infografis sebagai sumber bukti. Kamu tidak perlu membuka semuanya sekaligus. Saat membaca dan mengamati, perhatikan hal-hal yang membuatmu penasaran &mdash; jika ada sesuatu yang ingin kamu ketahui lebih jauh, tuliskan pertanyaanmu pada kotak di akhir setiap materi.
+        </p>
+
+        <!-- 3 Badge Abu-abu / Putih -->
+        <div class="banner-tags-row">
+          <span class="banner-tag-pill active-tag">
+            <span>📄</span> Teks Bacaan
+          </span>
+          <span class="banner-tag-pill">
+            <span>🎬</span> Ecomedia
+          </span>
+          <span class="banner-tag-pill">
+            <span>📊</span> Data Infografis
+          </span>
+        </div>
+      </section>
+
+      <!-- Card Putih Materi Bacaan -->
+      <main class="card-white materi-selection-card">
+        <div class="card-title-group">
+          <span class="card-icon-lead">📰</span>
+          <h2 class="card-title-dark">Materi Bacaan: Perubahan Iklim</h2>
+        </div>
+
+        <p class="materi-intro-paragraph">
+          Ada 5 materi pokok. Buka <strong>satu materi pada satu waktu</strong>, cari ide pentingnya, lalu lanjutkan. Dengan membaca secara bertahap, kamu dapat memahami informasi dengan lebih baik dan menemukan hal-hal penting dari bacaan.
+        </p>
+
+        <!-- Info Boks Border Biru -->
+        <div class="alert-box-blue">
+          <span class="alert-icon-lead">💡</span>
+          <div class="alert-box-content">
+            Setelah membaca satu materi, <strong>berhentilah sejenak</strong>. Pikirkan: <em>"Apa yang sudah kupahami? Apa yang masih membuatku penasaran?"</em> Tuliskan pertanyaanmu pada kotak 💭 <strong>Apa yang Membuatmu Penasaran?</strong> di akhir materi.
+          </div>
+        </div>
+
+        <!-- Grid 5 Kotak Materi -->
+        <div class="materi-cards-grid">
+          
+          <!-- Materi 1 -->
+          <div class="materi-item-card" data-materi="1" tabindex="0" role="button" aria-label="Buka Materi 1: Cuaca, Iklim, dan Musim">
+            <div class="materi-card-badge-row">
+              <span class="badge-materi-number">MATERI 1</span>
             </div>
-            <div class="user-profile">
-                👤 <span class="user-name-display">Sahabat</span>
+            <div class="materi-card-icon-area">
+              <span class="materi-big-icon">🌤️</span>
             </div>
+            <h3 class="materi-item-title">Cuaca, Iklim, dan Musim</h3>
+            <div class="materi-card-footer">
+              <span class="materi-status-text" id="status-materi-1">Mulai Belajar &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Materi 2 -->
+          <div class="materi-item-card" data-materi="2" tabindex="0" role="button" aria-label="Buka Materi 2: Atmosfer, Efek Rumah Kaca, dan Pemanasan Global">
+            <div class="materi-card-badge-row">
+              <span class="badge-materi-number">MATERI 2</span>
+            </div>
+            <div class="materi-card-icon-area">
+              <span class="materi-big-icon">🌡️</span>
+            </div>
+            <h3 class="materi-item-title">Atmosfer, Efek Rumah Kaca, dan Pemanasan Global</h3>
+            <div class="materi-card-footer">
+              <span class="materi-status-text" id="status-materi-2">Mulai Belajar &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Materi 3 -->
+          <div class="materi-item-card" data-materi="3" tabindex="0" role="button" aria-label="Buka Materi 3: Penyebab Perubahan Iklim">
+            <div class="materi-card-badge-row">
+              <span class="badge-materi-number">MATERI 3</span>
+            </div>
+            <div class="materi-card-icon-area">
+              <span class="materi-big-icon">🏭</span>
+            </div>
+            <h3 class="materi-item-title">Penyebab Perubahan Iklim</h3>
+            <div class="materi-card-footer">
+              <span class="materi-status-text" id="status-materi-3">Mulai Belajar &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Materi 4 -->
+          <div class="materi-item-card" data-materi="4" tabindex="0" role="button" aria-label="Buka Materi 4: Dampak Perubahan Iklim">
+            <div class="materi-card-badge-row">
+              <span class="badge-materi-number">MATERI 4</span>
+            </div>
+            <div class="materi-card-icon-area">
+              <span class="materi-big-icon">🌊</span>
+            </div>
+            <h3 class="materi-item-title">Dampak Perubahan Iklim</h3>
+            <div class="materi-card-footer">
+              <span class="materi-status-text" id="status-materi-4">Mulai Belajar &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Materi 5 -->
+          <div class="materi-item-card" data-materi="5" tabindex="0" role="button" aria-label="Buka Materi 5: Tindakan Ramah Lingkungan">
+            <div class="materi-card-badge-row">
+              <span class="badge-materi-number">MATERI 5</span>
+            </div>
+            <div class="materi-card-icon-area">
+              <span class="materi-big-icon">♻️</span>
+            </div>
+            <h3 class="materi-item-title">Tindakan Ramah Lingkungan</h3>
+            <div class="materi-card-footer">
+              <span class="materi-status-text" id="status-materi-5">Mulai Belajar &rarr;</span>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- 4. HALAMAN ECOMEDIA (DALAM MATERI)                       -->
+  <!-- ======================================================== -->
+  <section id="page-ecomedia" class="page" aria-label="Halaman Ecomedia Materi">
+
+    <!-- Top Sticky Navbar (Persisten) -->
+    <header class="app-top-navbar">
+      <div class="navbar-inner-container">
+        <!-- Menu Navigasi Pill -->
+        <nav class="nav-pills-list" aria-label="Navigasi Tahapan">
+          <button class="nav-pill-btn" data-nav="panduan" type="button">
+            <span>✅</span> Panduan &amp; Tujuan
+          </button>
+          <button class="nav-pill-btn" data-nav="peta" type="button">
+            <span>🗺️</span> Peta RADEC
+          </button>
+          <button class="nav-pill-btn active" data-nav="read" type="button">
+            <span>📖</span> Read
+          </button>
+          <button class="nav-pill-btn" data-nav="answer" type="button">
+            <span>✏️</span> Answer
+          </button>
+          <button class="nav-pill-btn" data-nav="discuss" type="button">
+            <span>💬</span> Discuss
+          </button>
+          <button class="nav-pill-btn" data-nav="explain" type="button">
+            <span>🗣️</span> Explain
+          </button>
+          <button class="nav-pill-btn" data-nav="create" type="button">
+            <span>🎨</span> Create
+          </button>
         </nav>
 
-        <div class="container mt-4">
-            <div class="banner-blue" style="background: linear-gradient(135deg, #00796b, #004d40);">
-                <div class="badge badge-outline-white mb-2">PETA KONSEP</div>
-                <h2>Peta Petualangan RADEC 🗺️</h2>
-                <p>RADEC adalah model belajar kita! Ikuti 5 langkah seru ini untuk menjadi pahlawan lingkungan yang cerdas dan kritis.</p>
-            </div>
-
-            <div class="journey-container mt-4">
-                <!-- Step 1 -->
-                <div class="journey-step">
-                    <div class="step-icon" style="background: #1976d2; box-shadow: 0 0 0 5px #e3f2fd;">📖</div>
-                    <div class="card journey-card">
-                        <span class="materi-label" style="color: #1976d2;">TAHAP 1</span>
-                        <h3 style="color: #1976d2;">Read (Membaca & Mengamati)</h3>
-                        <p class="text-gray mt-2">Membaca teks dan mengamati video Ecomedia. Temukan pesan penting dan pahami hubungan sebab-akibat perubahan iklim.</p>
-                    </div>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="journey-step">
-                    <div class="step-icon" style="background: #f57c00; box-shadow: 0 0 0 5px #fff3e0;">✍️</div>
-                    <div class="card journey-card">
-                        <span class="materi-label" style="color: #f57c00;">TAHAP 2</span>
-                        <h3 style="color: #f57c00;">Answer (Menjawab)</h3>
-                        <p class="text-gray mt-2">Jawab pertanyaan atau bedah video menggunakan 4 Lensa Ecomedia secara mandiri berdasarkan apa yang kamu pahami di tahap pertama.</p>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="journey-step">
-                    <div class="step-icon" style="background: #00897b; box-shadow: 0 0 0 5px #e0f2f1;">🗣️</div>
-                    <div class="card journey-card">
-                        <span class="materi-label" style="color: #00897b;">TAHAP 3</span>
-                        <h3 style="color: #00897b;">Discuss (Berdiskusi)</h3>
-                        <p class="text-gray mt-2">Berkumpul dengan teman kelompok! Bagikan jawabanmu, dengarkan pendapat teman, dan catat hasil kesepakatan bersama.</p>
-                    </div>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="journey-step">
-                    <div class="step-icon" style="background: #7b1fa2; box-shadow: 0 0 0 5px #f3e5f5;">💡</div>
-                    <div class="card journey-card">
-                        <span class="materi-label" style="color: #7b1fa2;">TAHAP 4</span>
-                        <h3 style="color: #7b1fa2;">Explain (Menjelaskan)</h3>
-                        <p class="text-gray mt-2">Waktunya tampil! Jelaskan dan presentasikan hasil diskusi kelompokmu di depan kelas dengan percaya diri.</p>
-                    </div>
-                </div>
-
-                <!-- Step 5 -->
-                <div class="journey-step">
-                    <div class="step-icon" style="background: #e53935; box-shadow: 0 0 0 5px #ffebee;">🎨</div>
-                    <div class="card journey-card">
-                        <span class="materi-label" style="color: #e53935;">TAHAP 5</span>
-                        <h3 style="color: #e53935;">Create (Mencipta)</h3>
-                        <p class="text-gray mt-2">Terapkan ilmu yang didapat dengan membuat karya nyata (poster, puisi, atau rancangan aksi ramah lingkungan).</p>
-                        <button class="btn btn-primary mt-3" onclick="navigateTo('page-read')">🚀 Mulai Petualangan Sekarang!</button>
-                    </div>
-                </div>
-            </div>
+        <!-- User Profile Pill -->
+        <div class="nav-user-badge" id="btn-user-profile-eco" title="Data Siswa">
+          <span class="user-avatar-icon">👤</span>
+          <span class="user-display-name" id="nama-navbar-eco">fona</span>
         </div>
-    </section>
+      </div>
+    </header>
 
-    <!-- 3. HALAMAN TAHAP 1: READ (DAFTAR MATERI) -->
-    <section id="page-read" class="page hidden bg-light-gray">
-        <!-- Reusable RADEC Navbar -->
-        <nav class="top-nav white-nav">
-            <div class="nav-pills">
-                <span class="nav-pill">Panduan & Tujuan</span>
-                <!-- Cari baris ini di navbar halaman Read, Ecomedia, Answer, Discuss, dsb -->
-                <span class="nav-pill" onclick="navigateTo('page-peta-radec')">Peta RADEC</span>
-                <span class="nav-pill active" onclick="navigateTo('page-read')">Read</span>
-                <span class="nav-pill" onclick="navigateTo('page-answer')">Answer</span>
-                <span class="nav-pill" onclick="navigateTo('page-discuss')">Discuss</span>
-                <span class="nav-pill" onclick="navigateTo('page-explain')">Explain</span>
-                <span class="nav-pill" onclick="navigateTo('page-create')">Create</span>
-            </div>
-            <div class="user-profile">
-                👤 <span class="user-name-display">Sahabat</span>
-            </div>
-        </nav>
+    <!-- Konten Ecomedia -->
+    <div class="ecomedia-page-container">
 
-        <div class="container mt-4">
-            <div class="banner-blue">
-                <div class="badge badge-light-blue mb-2">TAHAP 1 - READ (MEMBACA)</div>
-                <h2>Baca, Amati, Pahami, dan Ajukan Pertanyaanmu!</h2>
-                <p>Belajarlah bertahap: baca satu materi, berhenti sejenak untuk berpikir, lalu gunakan video dan infografis sebagai sumber bukti.</p>
-            </div>
+      <!-- Bar Navigasi Kembali & Breadcrumb -->
+      <div class="ecomedia-top-bar">
+        <button id="btn-back-materi" class="btn-back-pill" type="button">
+          &larr; Kembali ke Daftar Materi
+        </button>
 
-            <!-- ... (kode sebelumnya dari page-read) ... -->
-            <div class="card mt-4">
-                <h3>📖 Materi Bacaan: Perubahan Iklim</h3>
-                <p class="text-gray text-sm">Ada 5 materi pokok. Pilih satu materi untuk memulai.</p>
-                
-                <!-- Kontainer ini akan diisi oleh JavaScript -->
-                <div class="grid-materi mt-3" id="materi-container">
-                </div>
-            </div>
-            <!-- ... (kode setelahnya dari page-read) ... -->
-
-
+        <div class="materi-progress-indicator">
+          <span class="current-badge-pill" id="eco-materi-pill">Materi 1 dari 5</span>
         </div>
-    </section>
+      </div>
 
-    <!-- 4. HALAMAN ECOMEDIA (BAGIAN DARI READ) -->
-    <section id="page-ecomedia" class="page hidden bg-light-gray">
-        <!-- Reusable RADEC Navbar -->
-        <nav class="top-nav white-nav">
-            <div class="nav-pills">
-                <span class="nav-pill">Panduan & Tujuan</span>
-                <span class="nav-pill">Peta RADEC</span>
-                <span class="nav-pill active" onclick="navigateTo('page-read')">Read</span>
-                <span class="nav-pill" onclick="navigateTo('page-answer')">Answer</span>
-                <span class="nav-pill" onclick="navigateTo('page-discuss')">Discuss</span>
-                <span class="nav-pill" onclick="navigateTo('page-explain')">Explain</span>
-                <span class="nav-pill" onclick="navigateTo('page-create')">Create</span>
-            </div>
-            <div class="user-profile">
-                👤 <span class="user-name-display">Sahabat</span>
-            </div>
-        </nav>
-
-        <div class="container mt-4">
-            <button class="btn btn-outline mb-3" onclick="navigateTo('page-read')">&larr; Kembali ke Daftar Materi</button>
-            
-            <div class="card">
-                <h3>🎬 Ecomedia</h3>
-                
-                <div class="video-container mt-3">
-                    <video controls poster="https://via.placeholder.com/800x400/2c3e50/ffffff?text=Video+Pembelajaran+Perubahan+Iklim">
-                        <source src="#" type="video/mp4">
-                    </video>
-                </div>
-
-                <div class="alert-box alert-green mt-3">
-                    🔍 <strong>Amati Video dengan Empat Lensa Ecomedia</strong><br>
-                    Gunakan empat lensa di bawah ini untuk melihat pesan, siapa yang berperan, bahan/energi, dan pengalaman kita.
-                </div>
-
-                <div class="lensa-tabs mt-4">
-                    <div class="tab-headers">
-                        <button class="tab-btn active" data-target="tab-1">📖 Cerita & Nilai</button>
-                        <button class="tab-btn" data-target="tab-2">👥 Siapa yang Berperan?</button>
-                        <button class="tab-btn" data-target="tab-3">🔋 Bahan & Energi</button>
-                        <button class="tab-btn" data-target="tab-4">❤️ Pengalaman Kita</button>
-                    </div>
-                    
-                    <div class="tab-content-container">
-                        <div id="tab-1" class="tab-content active">
-                            <h4>📖 Lensa Cerita & Nilai</h4>
-                            <textarea id="val_lensa1" placeholder="Tuliskan hasil pengamatanmu di sini..."></textarea>
-                        </div>
-                        <div id="tab-2" class="tab-content hidden">
-                            <h4>👥 Lensa Siapa yang Berperan?</h4>
-                            <textarea id="val_lensa2" placeholder="Tuliskan hasil pengamatanmu di sini..."></textarea>
-                        </div>
-                        <div id="tab-3" class="tab-content hidden">
-                            <h4>🔋 Lensa Bahan, Energi & Limbah</h4>
-                            <textarea id="val_lensa3" placeholder="Tuliskan hasil pengamatanmu di sini..."></textarea>
-                        </div>
-                        <div id="tab-4" class="tab-content hidden">
-                            <h4>❤️ Lensa Pengalaman Kita</h4>
-                            <textarea id="val_lensa4" placeholder="Tuliskan hasil pengamatanmu di sini..."></textarea>
-                        </div>
-                        
-                        <div class="mt-3">
-                            <button class="btn btn-primary" onclick="simpanData('ecomedia')">💾 Simpan Hasil Pengamatan</button>
-                            <span id="toast-ecomedia" class="toast hidden">Tersimpan! ✅</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Card Utama Ecomedia -->
+      <main class="card-white ecomedia-main-card">
+        
+        <!-- Header Card -->
+        <div class="ecomedia-card-header">
+          <div class="ecomedia-title-row">
+            <span class="ecomedia-header-icon">🎬</span>
+            <h1 class="ecomedia-card-title">Ecomedia</h1>
+          </div>
+          <span class="materi-active-tag" id="eco-active-materi-tag">Materi 1: Cuaca, Iklim, dan Musim</span>
         </div>
-    </section>
 
-    <!-- 5. HALAMAN TAHAP 2: ANSWER -->
-    <section id="page-answer" class="page hidden bg-light-gray">
-        <nav class="top-nav white-nav">
-            <div class="nav-pills">
-                <span class="nav-pill">Panduan & Tujuan</span>
-                <span class="nav-pill">Peta RADEC</span>
-                <span class="nav-pill" onclick="navigateTo('page-read')">Read</span>
-                <span class="nav-pill active" onclick="navigateTo('page-answer')">Answer</span>
-                <span class="nav-pill" onclick="navigateTo('page-discuss')">Discuss</span>
-                <span class="nav-pill" onclick="navigateTo('page-explain')">Explain</span>
-                <span class="nav-pill" onclick="navigateTo('page-create')">Create</span>
-            </div>
-            <div class="user-profile">👤 <span class="user-name-display">Sahabat</span></div>
-        </nav>
+        <!-- Video Player Element -->
+        <div class="video-player-container">
+          <div class="video-responsive-wrapper">
+            <!-- HTML5 Video element -->
+            <video id="eco-video-player" controls preload="metadata" playsinline poster="">
+              <source id="eco-video-source" src="" type="video/mp4">
+              Browser Anda tidak mendukung pemutar video HTML5.
+            </video>
 
-        <div class="container mt-4">
-            <div class="banner-blue" > <!-- Warna beda untuk penanda tahap style="background: #f57c00;" -->
-                <div class="badge badge-light-blue mb-2">TAHAP 2 - ANSWER (MENJAWAB)</div>
-                <h2>Jawab Pertanyaan Berdasarkan Bukti!</h2>
-                <p>Gunakan informasi dari bacaan dan video Ecomedia untuk menjawab pertanyaan di bawah ini.</p>
+            <!-- Scenic Interactive Video Backdrop / Fallback Artwork -->
+            <div class="video-custom-overlay" id="video-custom-overlay">
+              <div class="video-landscape-art">
+                <div class="art-mountain-layer"></div>
+                <div class="art-valley-layer"></div>
+                <div class="art-ricefields-layer"></div>
+                <div class="art-houses-layer"></div>
+              </div>
+              <button class="video-overlay-play-btn" id="btn-overlay-play" aria-label="Putar Video">
+                <span class="play-triangle">▶</span>
+              </button>
+              <div class="video-overlay-caption">
+                <span id="overlay-video-title">Video Pembelajaran Ecomedia</span>
+                <span class="video-duration-badge" id="overlay-video-duration">2:38</span>
+              </div>
             </div>
-            <div class="card mt-4">
-                <h3>✍️ Lembar Jawaban</h3>
-                <p class="text-gray mb-3">Apa penyebab utama perubahan iklim menurut pengamatanmu?</p>
-                <textarea id="val_answer" class="full-textarea" placeholder="Tuliskan jawabanmu di sini..."></textarea>
-                <div class="mt-3">
-                    <button class="btn btn-primary" onclick="simpanData('answer')">💾 Simpan Jawaban</button>
-                    <span id="toast-answer" class="toast hidden">Tersimpan! ✅</span>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- 6. HALAMAN TAHAP 3: DISCUSS -->
-    <section id="page-discuss" class="page hidden bg-light-gray">
-        <nav class="top-nav white-nav">
-            <div class="nav-pills">
-                <span class="nav-pill">Panduan & Tujuan</span>
-                <span class="nav-pill">Peta RADEC</span>
-                <span class="nav-pill" onclick="navigateTo('page-read')">Read</span>
-                <span class="nav-pill" onclick="navigateTo('page-answer')">Answer</span>
-                <span class="nav-pill active" onclick="navigateTo('page-discuss')">Discuss</span>
-                <span class="nav-pill" onclick="navigateTo('page-explain')">Explain</span>
-                <span class="nav-pill" onclick="navigateTo('page-create')">Create</span>
-            </div>
-            <div class="user-profile">👤 <span class="user-name-display">Sahabat</span></div>
-        </nav>
-
-        <div class="container mt-4">
-            <div class="banner-blue" > <!-- style="background: #00897b;" -->
-                <div class="badge badge-light-blue mb-2">TAHAP 3 - DISCUSS (BERDISKUSI)</div>
-                <h2>Waktunya Berbagi Pendapat</h2>
-                <p>Diskusikan jawabanmu dengan teman kelompok. Apakah ada perbedaan? Tuliskan hasil diskusi bersama.</p>
-            </div>
-            <div class="card mt-4">
-                <h3>🗣️ Hasil Diskusi Kelompok</h3>
-                <textarea id="val_discuss" class="full-textarea mt-3" placeholder="Catatan hasil diskusi kelompok..."></textarea>
-                <div class="mt-3">
-                    <button class="btn btn-primary" onclick="simpanData('discuss')">💾 Simpan Hasil Diskusi</button>
-                    <span id="toast-discuss" class="toast hidden">Tersimpan! ✅</span>
-                </div>
-            </div>
+        <!-- Ringkasan Teks Materi Singkat -->
+        <div class="materi-text-summary-box">
+          <h3 class="summary-title" id="summary-materi-title">📌 Intisari Materi</h3>
+          <p class="summary-content" id="summary-materi-text">
+            Memuat ringkasan materi...
+          </p>
         </div>
-    </section>
 
-    <!-- 7. HALAMAN TAHAP 4: EXPLAIN -->
-    <section id="page-explain" class="page hidden bg-light-gray">
-        <nav class="top-nav white-nav">
-            <div class="nav-pills">
-                <span class="nav-pill">Panduan & Tujuan</span>
-                <span class="nav-pill">Peta RADEC</span>
-                <span class="nav-pill" onclick="navigateTo('page-read')">Read</span>
-                <span class="nav-pill" onclick="navigateTo('page-answer')">Answer</span>
-                <span class="nav-pill" onclick="navigateTo('page-discuss')">Discuss</span>
-                <span class="nav-pill active" onclick="navigateTo('page-explain')">Explain</span>
-                <span class="nav-pill" onclick="navigateTo('page-create')">Create</span>
-            </div>
-            <div class="user-profile">👤 <span class="user-name-display">Sahabat</span></div>
-        </nav>
-
-        <div class="container mt-4">
-            <div class="banner-blue" > <!-- style="background: #7b1fa2;" -->
-                <div class="badge badge-light-blue mb-2">TAHAP 4 - EXPLAIN (MENJELASKAN)</div>
-                <h2>Siapkan Presentasimu!</h2>
-                <p>Susunlah poin-poin utama yang akan kamu jelaskan di depan kelas berdasarkan pemahaman dan hasil diskusimu.</p>
-            </div>
-            <div class="card mt-4">
-                <h3>💡 Poin Penjelasan</h3>
-                <textarea id="val_explain" class="full-textarea mt-3" placeholder="Poin presentasi..."></textarea>
-                <div class="mt-3">
-                    <button class="btn btn-primary" onclick="simpanData('explain')">💾 Simpan Penjelasan</button>
-                    <span id="toast-explain" class="toast hidden">Tersimpan! ✅</span>
-                </div>
-            </div>
+        <!-- Kotak Instruksi Hijau Muda -->
+        <div class="alert-box-green">
+          <div class="alert-green-left-icon">
+            <span class="lens-search-icon">🔍</span>
+          </div>
+          <div class="alert-green-text-content">
+            <h3 class="alert-green-heading">
+              Setelah Menonton, Amati Video dengan Empat Lensa Ecomedia
+            </h3>
+            <p class="alert-green-desc">
+              Gunakan empat lensa di bawah ini untuk melihat pesan dan nilai dalam video, siapa yang berperan, bahan, energi, dan limbah yang terkait dengan media, serta apa yang kamu rasakan atau ingin lakukan setelah menontonnya.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!-- 8. HALAMAN TAHAP 5: CREATE -->
-    <section id="page-create" class="page hidden bg-light-gray">
-        <nav class="top-nav white-nav">
-            <div class="nav-pills">
-                <span class="nav-pill">Panduan & Tujuan</span>
-                <span class="nav-pill">Peta RADEC</span>
-                <span class="nav-pill" onclick="navigateTo('page-read')">Read</span>
-                <span class="nav-pill" onclick="navigateTo('page-answer')">Answer</span>
-                <span class="nav-pill" onclick="navigateTo('page-discuss')">Discuss</span>
-                <span class="nav-pill" onclick="navigateTo('page-explain')">Explain</span>
-                <span class="nav-pill active" onclick="navigateTo('page-create')">Create</span>
-            </div>
-            <div class="user-profile">👤 <span class="user-name-display">Sahabat</span></div>
-        </nav>
+        <!-- Bagian 4 Lensa Ecomedia -->
+        <section class="empat-lensa-section" aria-label="Empat Lensa Ecomedia">
+          <div class="lensa-section-header">
+            <span class="sparkle-icon">✨</span>
+            <h2 class="lensa-section-title">Empat Lensa Ecomedia</h2>
+          </div>
 
-        <div class="container mt-4">
-            <div class="banner-blue" > <!-- style="background: #e53935;" -->
-                <div class="badge badge-light-blue mb-2">TAHAP 5 - CREATE (MENCIPTA)</div>
-                <h2>Wujudkan Aksimu untuk Bumi</h2>
-                <p>Buatlah karya (poster, kampanye, atau rencana aksi) yang menunjukkan langkah nyata menjaga lingkungan.</p>
-            </div>
-            <div class="card mt-4">
-                <h3>🎨 Rencana Aksi & Unggah Karya</h3>
-                <textarea id="val_create" class="full-textarea mt-3" placeholder="Jelaskan rencana aksimu di sini..."></textarea>
-                
-                <div class="upload-box mt-3">
-                    <p>Atau unggah file karya (Gambar/PDF)</p>
-                    <input type="file" class="mt-2">
-                </div>
+          <!-- Tab Menu 4 Lensa -->
+          <div class="lensa-tabs-nav" role="tablist">
+            <!-- Lensa 1: Cerita & Nilai -->
+            <button class="lensa-tab-btn active" data-lensa="cerita" role="tab" aria-selected="true" aria-controls="lensa-content-panel">
+              <span class="tab-icon">📖</span>
+              <span class="tab-label">Cerita &amp; Nilai</span>
+            </button>
 
-                <div class="mt-4">
-                    <button class="btn btn-primary" onclick="simpanData('create')">💾 Simpan Karya</button>
-                    <span id="toast-create" class="toast hidden">Tersimpan! ✅</span>
-                </div>
+            <!-- Lensa 2: Siapa yang Berperan? -->
+            <button class="lensa-tab-btn" data-lensa="peran" role="tab" aria-selected="false" aria-controls="lensa-content-panel">
+              <span class="tab-icon">👥</span>
+              <span class="tab-label">Siapa yang Berperan?</span>
+            </button>
+
+            <!-- Lensa 3: Bahan, Energi & Limbah -->
+            <button class="lensa-tab-btn" data-lensa="limbah" role="tab" aria-selected="false" aria-controls="lensa-content-panel">
+              <span class="tab-icon">🔋</span>
+              <span class="tab-label">Bahan, Energi &amp; Limbah</span>
+            </button>
+
+            <!-- Lensa 4: Pengalaman Kita -->
+            <button class="lensa-tab-btn" data-lensa="pengalaman" role="tab" aria-selected="false" aria-controls="lensa-content-panel">
+              <span class="tab-icon">❤️</span>
+              <span class="tab-label">Pengalaman Kita</span>
+            </button>
+          </div>
+
+          <!-- Konten Lensa Aktif -->
+          <div class="lensa-content-container" id="lensa-content-panel" role="tabpanel">
+            <div class="lensa-guidance-box" id="lensa-guidance-box">
+              <span class="guide-tag">Panduan Pengamatan:</span>
+              <span class="guide-prompt-text" id="lensa-guide-text">
+                Apa cerita utama dalam video ini? Nilai atau pesan penting apa yang ingin disampaikan tentang lingkungan?
+              </span>
             </div>
+
+            <!-- Textarea Pengamatan -->
+            <div class="textarea-field-wrapper">
+              <textarea 
+                id="lensa-textarea" 
+                rows="6" 
+                placeholder="Tuliskan pengamatan dan pemikiranmu di sini..."
+                aria-label="Catatan Pengamatan Lensa"
+              ></textarea>
+            </div>
+
+            <!-- Autosave & Character Counter Bar -->
+            <div class="lensa-status-bar">
+              <div class="save-indicator" id="save-indicator">
+                <span class="save-dot"></span>
+                <span class="save-text">Tersimpan otomatis di browser</span>
+              </div>
+              <div class="char-counter">
+                <span id="char-count">0</span> karakter
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Kotak Apa yang Membuatmu Penasaran? -->
+        <section class="curiosity-section" aria-label="Pertanyaan Rasa Ingin Tahu">
+          <div class="curiosity-box">
+            <div class="curiosity-header">
+              <span class="curiosity-icon">💭</span>
+              <h3 class="curiosity-title">Apa yang Membuatmu Penasaran?</h3>
+            </div>
+            <p class="curiosity-subtext">
+              Tuliskan pertanyaanmu jika ada hal yang masih membuatmu penasaran dan ingin kamu tanyakan pada guru atau teman:
+            </p>
+            <div class="textarea-field-wrapper">
+              <textarea 
+                id="penasaran-textarea" 
+                rows="3" 
+                placeholder="Contoh: Mengapa gas rumah kaca bisa bertahan sangat lama di atmosfer?..."
+                aria-label="Pertanyaan yang membuatmu penasaran"
+              ></textarea>
+            </div>
+            <div class="curiosity-footer">
+              <span class="curiosity-save-badge" id="curiosity-save-badge">Pertanyaan disimpan</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer Navigasi Materi -->
+        <div class="ecomedia-nav-footer">
+          <button id="btn-prev-materi" class="btn-secondary-pill" type="button">
+            &larr; Materi Sebelumnya
+          </button>
+          
+          <button id="btn-next-materi" class="btn-primary-gradient" type="button">
+            Materi Berikutnya &rarr;
+          </button>
         </div>
-    </section>
 
-    <script src="script.js"></script>
+      </main>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- MODAL DIALOGS (PANDUAN, PETA RADEC, TAHAPAN RADEC)      -->
+  <!-- ======================================================== -->
+  
+  <!-- Modal: Panduan & Tujuan Pembelajaran -->
+  <div id="modal-panduan" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-panduan-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 id="modal-panduan-title" class="modal-title">
+          <span>✅</span> Panduan &amp; Tujuan Pembelajaran
+        </h2>
+        <button class="modal-close-btn" data-close-modal="modal-panduan" aria-label="Tutup">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-info-section">
+          <h3>🎯 Capaian Pembelajaran (Kelas V SD)</h3>
+          <p>
+            Peserta didik memahami gejala perubahan cuaca dan iklim, penyebab terjadinya pemanasan global, pengaruhnya terhadap ekosistem serta upaya pelestarian lingkungan melalui literasi media ramah lingkungan (Ecoliteracy).
+          </p>
+        </div>
+        <div class="modal-info-section">
+          <h3>🌱 4 Lensa Ecomedia</h3>
+          <ul class="modal-bullet-list">
+            <li><strong>Cerita &amp; Nilai:</strong> Menemukan pesan dan pesan moral terkait kepedulian alam.</li>
+            <li><strong>Siapa yang Berperan:</strong> Mengidentifikasi tokoh manusia, hewan, atau masyarakat yang terlibat.</li>
+            <li><strong>Bahan, Energi &amp; Limbah:</strong> Menganalisis sumber daya alam yang dipakai dan sisa buangannya.</li>
+            <li><strong>Pengalaman Kita:</strong> Mengaitkan video dengan lingkungan kehidupan sehari-hari di sekitar kita.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary-gradient btn-modal-confirm" data-close-modal="modal-panduan" type="button">
+          Saya Mengerti
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Peta RADEC -->
+  <div id="modal-peta" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-peta-title">
+    <div class="modal-card modal-large">
+      <div class="modal-header">
+        <h2 id="modal-peta-title" class="modal-title">
+          <span>🗺️</span> Peta Alur Belajar RADEC
+        </h2>
+        <button class="modal-close-btn" data-close-modal="modal-peta" aria-label="Tutup">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="radec-roadmap-visual">
+          <!-- Step 1: Read -->
+          <div class="roadmap-step current">
+            <div class="step-badge-circ">R</div>
+            <div class="roadmap-step-content">
+              <h4>1. READ</h4>
+              <p>Membaca teks, mengamati video ecomedia &amp; infografis.</p>
+            </div>
+          </div>
+          <div class="roadmap-arrow">&rarr;</div>
+
+          <!-- Step 2: Answer -->
+          <div class="roadmap-step">
+            <div class="step-badge-circ">A</div>
+            <div class="roadmap-step-content">
+              <h4>2. ANSWER</h4>
+              <p>Menjawab pertanyaan pra-pembelajaran secara mandiri.</p>
+            </div>
+          </div>
+          <div class="roadmap-arrow">&rarr;</div>
+
+          <!-- Step 3: Discuss -->
+          <div class="roadmap-step">
+            <div class="step-badge-circ">D</div>
+            <div class="roadmap-step-content">
+              <h4>3. DISCUSS</h4>
+              <p>Berdiskusi dalam kelompok untuk memecahkan masalah.</p>
+            </div>
+          </div>
+          <div class="roadmap-arrow">&rarr;</div>
+
+          <!-- Step 4: Explain -->
+          <div class="roadmap-step">
+            <div class="step-badge-circ">E</div>
+            <div class="roadmap-step-content">
+              <h4>4. EXPLAIN</h4>
+              <p>Menjelaskan ide dan temuan solusi di depan kelas.</p>
+            </div>
+          </div>
+          <div class="roadmap-arrow">&rarr;</div>
+
+          <!-- Step 5: Create -->
+          <div class="roadmap-step">
+            <div class="step-badge-circ">C</div>
+            <div class="roadmap-step-content">
+              <h4>5. CREATE</h4>
+              <p>Membuat karya aksi nyata penyelamatan lingkungan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary-gradient btn-modal-confirm" data-close-modal="modal-peta" type="button">
+          Kembali ke Pembelajaran
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Info Tahap Lainnya -->
+  <div id="modal-info-tahap" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-info-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 id="modal-info-title" class="modal-title">Informasi Tahapan</h2>
+        <button class="modal-close-btn" data-close-modal="modal-info-tahap" aria-label="Tutup">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="tahap-icon-big" id="modal-tahap-icon">✏️</div>
+        <h3 id="modal-tahap-name" class="modal-tahap-name">Tahap ANSWER</h3>
+        <p id="modal-tahap-desc" class="modal-tahap-desc">
+          Selesaikan terlebih dahulu pengamatan materi pada tahap READ untuk membuka tahap ini.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary-gradient btn-modal-confirm" data-close-modal="modal-info-tahap" type="button">
+          Oke, Lanjutkan Read
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="app-toast" class="toast-notification" aria-live="polite">
+    <span class="toast-icon">✨</span>
+    <span class="toast-message" id="toast-message">Pesan notifikasi</span>
+  </div>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
 </body>
 </html>
