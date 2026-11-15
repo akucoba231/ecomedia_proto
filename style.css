@@ -300,6 +300,25 @@ input, textarea {
   animation-delay: -2s;
 }
 
+.pill-discuss-float {
+  top: 135px;
+  left: -80px;
+  color: #7c3aed;
+  animation-delay: -4s;
+}
+.pill-explain-float {
+  top: 205px;
+  right: -20px;
+  color: #7c3aed;
+  animation-delay: -6s;
+}
+.pill-create-float {
+  top: 245px;
+  left: -5px;
+  color: #7c3aed;
+  animation-delay: -8s;
+}
+
 @keyframes floatBounce {
   0%, 100% {
     transform: translateY(0);
